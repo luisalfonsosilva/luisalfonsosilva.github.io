@@ -2,7 +2,7 @@ name: Luis Alfonso Silva
 markdown: redcarpet
 highlighter: true
 timezone: America/Mexico_City
-baseurl: http://luisalfonsosilva.github.io/
+baseurl: http://luisalfonsosilva.github.io
 permalink: /:year/:month/:day/:title
 paginate: 10
 defaults:
