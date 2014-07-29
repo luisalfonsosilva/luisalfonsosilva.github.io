@@ -1,0 +1,29 @@
+name: Luis Alfonso Silva
+markdown: redcarpet
+highlighter: true
+timezone: America/Mexico_City
+baseurl: http://luisalfonsosilva.mx
+permalink: /:year/:month/:day/:title
+paginate: 10
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "blog"
+      type: "post"
+    values:
+      layout: post
+      category: blog
+      blog: true
+  -
+    scope:
+      path: "noticias"
+      type: "post"
+    values:
+      layout: post
+      category: noticias
+      noticias: true   

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<row>
+	<div class="col-sm-8">
+		<h1 class="category">{{ page.namecategory }}</h1>
+		<ul class="posts" style="padding-left: 0px;">
+		{% for post in site.categories[page.category] %}
+		    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+		    <hr>
+		    <p>{{ post.excerpt }}</p>
+		    <p><small>{{ post.date | date_to_long_string }}</small></p>
+		{% endfor %}
+		</ul>
+	</div>
+	<div class="col-sm-4">
+		<div>
+			<h3>Sígueme</h3>
+			<hr>
+			<h3>Cómo te puedo ayudar</h3>
+			<hr>
+			{% include formulario.html %}
+		</div>
+	</div>
+</row>

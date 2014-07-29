@@ -1,0 +1,119 @@
+body {
+  padding-top: 20px;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+
+.nav-justified {
+  background-color: #eee;
+  border-radius: 0px;
+  max-height: 57px !important;
+  border-bottom: 3px solid #a5a5a5;
+  border-top: 1px solid #fff;
+  border-right: 2px solid #d5d5d5;
+  border-left: 2px solid #d5d5d5;
+  padding-left: -2px;
+  padding-right: -2px;
+}
+
+.nav-justified > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #3c3c3c;
+  text-align: center;
+  
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.49, #EDEDED),
+    color-stop(0.49, #D6D7D8),
+    color-stop(0.51, #D6D7D8)
+  );
+  background-image: -o-linear-gradient(bottom, #EDEDED 49%, #D6D7D8 49%, #D6D7D8 51%);
+  background-image: -moz-linear-gradient(bottom, #EDEDED 49%, #D6D7D8 49%, #D6D7D8 51%);
+  background-image: -webkit-linear-gradient(bottom, #EDEDED 49%, #D6D7D8 49%, #D6D7D8 51%);
+  background-image: -ms-linear-gradient(bottom, #EDEDED 49%, #D6D7D8 49%, #D6D7D8 51%);
+  background-image: linear-gradient(to bottom, #EDEDED 49%, #D6D7D8 49%, #D6D7D8 51%);
+}
+
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus,
+.nav-justified > li > a:hover {
+  color: #eee;
+  
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.33, #1E1E1E),
+    color-stop(1, #4B4B4B)
+  );
+  background-image: -o-linear-gradient(bottom, #1E1E1E 33%, #4B4B4B 100%);
+  background-image: -moz-linear-gradient(bottom, #1E1E1E 33%, #4B4B4B 100%);
+  background-image: -webkit-linear-gradient(bottom, #1E1E1E 33%, #4B4B4B 100%);
+  background-image: -ms-linear-gradient(bottom, #1E1E1E 33%, #4B4B4B 100%);
+  background-image: linear-gradient(to bottom, #1E1E1E 33%, #4B4B4B 100%);
+}
+
+/*
+.nav-justified > li:first-child > a {
+  border-radius: 0px 0px 0 0;
+}
+.nav-justified > li:last-child > a {
+  border-radius: 0 0 0px 0px;
+}
+
+*/
+
+@media (min-width: 768px) {
+  .nav-justified {
+    max-height: 52px;
+  }
+  .nav-justified > li > a {
+    border-right: 1px solid #a5a5a5;
+    /*border-left: 1px solid #a5a5a5;
+    border-bottom: 2px solid #a5a5a5;
+    border-left: 1px solid #d5d5d5;
+    border-right: 1px solid #d5d5d5;*/
+  }
+  .nav-justified > li:first-child > a {
+    border-left: 0;
+    border-radius: 0px 0 0 0px;
+  }
+  .nav-justified > li:last-child > a {
+    border-right: 0;
+    border-radius: 0 0px 0px 0;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

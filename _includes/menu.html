@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="masthead">
+    <img src="{{ site.baseurl }}/images/logo.png">
+    <ul class="nav nav-justified">
+      <li class="{% if page.home %} active {% endif %}" ><a href="{{ site.baseurl }}" style="padding: 15px 0px 12px 0px;"><img src="{{ site.baseurl }}/images/home.png"></a></li>
+      <li class="{% if page.conoceme %} active {% endif %}"><a href="{{ site.baseurl }}/acerca-de">CONÓCEME</a></li>
+      <li class="{% if page.dicen %} active {% endif %}"><a href="{{ site.baseurl }}/dicen-de-mi">DICEN DE MÍ</a></li>
+      <li class="{% if page.noticias %} active {% endif %}"><a href="{{ site.baseurl }}/noticias">NOTICIAS</a></li>
+      <li class="{% if page.blog %} active {% endif %}"><a href="{{ site.baseurl }}/blog">BLOG</a></li>
+      <li class="{% if page.contacto %} active {% endif %}"><a href="{{ site.baseurl }}/contacto">CONTACTO</a></li>
+    </ul>
+  </div>
+</div>

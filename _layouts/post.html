@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<row>
+	<div class="col-sm-8">
+		<h1>{{ page.title }}</h1>
+
+		<div>
+			<div class="pull-left" style="padding-right: 10px;">
+				<div class="fb-share-button" data-type="button"></div>
+			</div>
+			<div class="pull-left">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-count="none">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
+			<br>
+		</div>
+		<hr>
+		<div class="post">
+		{{ content }}
+		</div>
+		<hr>
+		<div>
+			<h3>Escribe un comentario:</h3>
+			<small><strong>Nota:</strong> Agradezco todas las opiniones aquí publicadas por los lectores de <em>luisalfonsosilva.mx</em>. Te invito a participar en este espacio con respeto y responsabilidad. Evitemos vulgaridades, comentarios ofensivos y difamaciones. Las publicaciones que contengan dichas características serán eliminadas inmediatamente.</small>
+		</div>
+		<br>
+		<div style="padding: 10px; background-color: #f5f5f5;">
+			<div class="fb-comments" data-href="{{ site.baseurl }}{{ page.url }}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div>
+			<h3>Sígueme</h3>
+			<hr>
+			<h3>Cómo te puedo ayudar</h3>
+			<hr>
+			{% include formulario.html %}
+			<h3>Historial</h3>
+			<hr>
+			{% for post in site.categories[page.categories.first] limit:10 %}
+			    <h3><small><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></small></h3>
+			{% endfor %}
+		</div>
+	</div>
+</row>
